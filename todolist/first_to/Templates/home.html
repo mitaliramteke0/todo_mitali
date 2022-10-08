@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo_List</title>
+</head>
+<h1>message</h1>
+<thead>
+<th>user</th>
+<th>task</th>
+</thead>
+
+{% if Todo %}
+{% for todo in todolist %}
+<tbody>
+<td>{{todo.user}}</td>
+<td>{{todo.task}}</td>
+
+</tbody>
+
+{% endfor %}
+{% endif %}
+
+</html>
